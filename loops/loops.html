@@ -18,7 +18,12 @@ var randomInt = getRandomInt(1, 100);
 /* END STARTING CODE */
 
 // your code goes under here
-
+	var num = prompt("please enter your Guess:");
+	while (num!=randomInt){
+		if(num>randomInt){
+			num = prompt("worng! please enter your Guess:");
+		}
+	}
     </script>
 </body>
 
