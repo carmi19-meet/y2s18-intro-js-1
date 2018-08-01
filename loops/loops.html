@@ -19,11 +19,15 @@ var randomInt = getRandomInt(1, 100);
 
 // your code goes under here
 	var num = prompt("please enter your Guess:");
+	var c=0;
 	while (num!=randomInt){
 		if(num>randomInt){
-			num = prompt("worng! please enter your Guess:");
+			num = prompt("worng your number is to high! please enter your Guess:");}
+		else if(num<randomInt){
+			num = prompt("worng your number is to small! please enter your Guess:");}
+			c++;
 		}
-	}
+		alert("good job! you Guessed the number! and you did it in:" + (c) + " Guesses");
     </script>
 </body>
 

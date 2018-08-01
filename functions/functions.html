@@ -16,8 +16,34 @@ function isLetter(char) {
 }
 
 // Write your isPalindrome function here!
+function isPalindrome(word)
+{
+	var list = [];
+	var p = true;
+	var z=0;
+	for (var i=0; i<word.length; i++){
+		if (isLetter(word[i])){
+			list.push(word[i]);
+			}
+		for (var j = 0; j <= word.length/2; j++)
+		{
+			if ((word[j])!=word[word.length-z-1])
+			{
+			p = false;
+			}
+		z++;
+		}
+
+	}
+document.write(list
+<br>
+return p;
+}
+document.write(isPalindrome(prompt("enter a word, a sentece or anything else.")));
+
 
     </script>
+}
 </body>
 
 </html>
